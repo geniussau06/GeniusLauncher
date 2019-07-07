@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:ignore="rtlHardcoded" android:background="@android:color/transparent">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" tools:ignore="UselessParent">
+
+        <SearchView android:layout_margin="5dp"
+                    android:id="@+id/searchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#94C5C5C5"/>
+
+        <GridView android:id="@+id/apps_list"
+                  android:padding="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:stretchMode="columnWidth"
+                  android:background="@android:color/transparent">
+        </GridView>
+
+    </LinearLayout>
+</FrameLayout>
